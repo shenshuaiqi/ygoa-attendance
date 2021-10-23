@@ -1,0 +1,71 @@
+[
+  {
+    "path": "/check",
+    "name": "check",
+    "meta": {
+      "icon": "md-contacts",
+      "title": "考勤设置"
+    },
+    "parentid": 0,
+    "children": [
+      {
+        "path": "group",
+        "name": "group",
+        "meta": {
+          "icon": "md-arrow-dropdown-circle",
+          "title": "考勤区域编辑",
+          "hideInBread": true,
+          "hideInMenu": true
+        },
+        "component": "/check/check-group.vue"
+      },
+      {
+        "path": "group-list",
+        "name": "group-list",
+        "meta": {
+          "icon": "md-arrow-dropdown-circle",
+          "title": "考勤区域管理"
+        },
+        "component": "/check/check-group-list.vue"
+      },
+      {
+        "path": "count_to_page",
+        "name": "count_to_page",
+        "meta": {
+          "icon": "md-copy",
+          "title": "考勤点管理"
+        },
+        "component": "/check/check-place.vue"
+      }
+    ]
+  },
+  {
+    "path": "/system",
+    "name": "system",
+    "meta": {
+      "icon": "md-contacts",
+      "title": "系统设置"
+    },
+    "parentid": 0,
+    "children": [
+      {
+        "path": "menu",
+        "name": "menu",
+        "meta": {
+          "icon": "md-arrow-dropdown-circle",
+          "title": "菜单设置"
+        },
+        "component": "/system/menu/menu.vue"
+      },
+      {
+        "path": "role",
+        "name": "role",
+        "meta": {
+          "icon": "md-arrow-dropdown-circle",
+          "title": "角色管理"
+        },
+        "component": "/check/check-group-list.vue"
+      }
+    ]
+  }
+]
